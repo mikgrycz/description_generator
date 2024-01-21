@@ -1,0 +1,95 @@
+﻿@page "/"
+@inject IJSRuntime JSRuntime
+
+<h3>Print your room decription here...</h3>
+
+<div style="display: flex; flex-direction: column; align-items: start;">
+    <div id="movableRectangle" style="width: 500px; height: 500px; position: relative; border: 1px solid black; overflow: auto;">
+
+    <textarea id="textBox1" style="position: absolute; resize: both;" onkeyup="window.enlargeOnEnter(event)"></textarea>
+    <textarea id="textBox2" style="position: absolute; top: 50px; resize: both;" onkeyup="window.enlargeOnEnter(event)"></textarea>
+<img id="logoImage" src="images/uj_logo.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 70px;" />
+    </div>
+    <div style="margin-top: 20px;">
+        <p>People</p>
+        <div>
+            <button class="btn btn-primary mb-3" onclick="move('textBox1', 0, -25)">Up</button>
+            <button  class="btn btn-primary mb-3" onclick="move('textBox1', 0, 25)">Down</button>
+            <button  class="btn btn-primary mb-3" onclick="move('textBox1', -25, 0)">Left</button>
+            <button  class="btn btn-primary mb-3" onclick="move('textBox1', 25, 0)">Right</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontSize('textBox1', 1)">Increase Font Size</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontSize('textBox1', -1)">Decrease Font Size</button>
+            <button  class="btn btn-primary mb-3" onclick="toggleBold('textBox1')">Toggle Bold</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontStyle('textBox1', 'Arial')">Change Font to Arial</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontStyle('textBox1', 'Times New Roman')">Change Font to Times New Roman</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontStyle('textBox1', 'Courier New')">Change Font to Courier New</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontStyle('textBox1', 'Verdana')">Change Font to Verdana</button>
+            <button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'black')">Change Text Color to Black</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'red')">Change Text Color to Red</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'yellow')">Change Text Color to Yellow</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'blue')">Change Text Color to Blue</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'green')">Change Text Color to Green</button>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <p>Number</p>
+        <div>
+            <button class="btn btn-primary mb-3"  onclick="move('textBox2', 0, -25)">Up</button>
+            <button  class="btn btn-primary mb-3" onclick="move('textBox2', 0, 25)">Down</button>
+            <button  class="btn btn-primary mb-3" onclick="move('textBox2', -25, 0)">Left</button>
+            <button class="btn btn-primary mb-3"  onclick="move('textBox2', 25, 0)">Right</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontSize('textBox2', 1)">Increase Font Size</button>
+            <button class="btn btn-primary mb-3"  onclick="changeFontSize('textBox2', -1)">Decrease Font Size</button>
+            <button class="btn btn-primary mb-3"  onclick="toggleBold('textBox2')">Toggle Bold</button>
+            <button  class="btn btn-primary mb-3" onclick="changeFontStyle('textBox2', 'Arial')">Change Font to Arial</button>
+            <button class="btn btn-primary mb-3"  onclick="changeFontStyle('textBox2', 'Times New Roman')">Change Font to Times New Roman</button>
+            <button class="btn btn-primary mb-3"  onclick="changeFontStyle('textBox2', 'Courier New')">Change Font to Courier New</button>
+            <button class="btn btn-primary mb-3"  onclick="changeFontStyle('textBox2', 'Verdana')">Change Font to Verdana</button>
+            <button class="btn btn-primary mb-3" onclick="changeTextColor('textBox1', 'black')">Change Text Color to Black</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox2', 'red')">Change Text Color to Red</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox2', 'yellow')">Change Text Color to Yellow</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox2', 'blue')">Change Text Color to Blue</button>
+<button class="btn btn-primary mb-3" onclick="changeTextColor('textBox2', 'green')">Change Text Color to Green</button>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+    <p>Tools</p>
+    <div>
+        <input type="file" id="fileInput" style="display: none;" onchange="window.restoreForm('movableRectangle', this.files[0])">
+        <button  class="btn btn-primary mb-3" onclick="document.getElementById('fileInput').click()">Restore</button>
+        <button  class="btn btn-primary mb-3" onclick="window.saveForm('movableRectangle')">Save</button>
+        <button  class="btn btn-primary mb-3" onclick="window.printForm('movableRectangle', 'printFrame')">Print</button>
+    </div>
+    </div>
+<div style="margin-top: 20px;">
+    <p>Upload an image</p>
+    <div>
+        <button  class="btn btn-primary mb-3" onclick="changeImageSize('logoImage', 3)">Increase Image Size</button>
+        <button  class="btn btn-primary mb-3" onclick="changeImageSize('logoImage', -3)">Decrease Image Size</button>
+        <button  class="btn btn-primary mb-3" onclick="moveImage('logoImage', 0, -25)">Move Image Up</button>
+        <button  class="btn btn-primary mb-3" onclick="moveImage('logoImage', 0, 25)">Move Image Down</button>
+        <button  class="btn btn-primary mb-3" onclick="moveImage('logoImage', -25, 0)">Move Image Left</button>
+        <button  class="btn btn-primary mb-3" onclick="moveImage('logoImage', 25, 0)">Move Image Right</button>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+</div>
+
+<iframe id="printFrame" style="display:none;"></iframe>
+
+@code {
+    async Task PrintForm() {
+        await JSRuntime.InvokeVoidAsync("printForm", "movableRectangle", "printFrame");
+    }
+    async Task SaveForm() {
+        await JSRuntime.InvokeVoidAsync("saveForm", "movableRectangle");
+    }
+    async Task RestoreForm() {
+        await JSRuntime.InvokeVoidAsync("restoreForm", "movableRectangle");
+    }
+    async Task ToggleBold(string textBoxId) {
+        await JSRuntime.InvokeVoidAsync("toggleBold", textBoxId);
+    }
+}

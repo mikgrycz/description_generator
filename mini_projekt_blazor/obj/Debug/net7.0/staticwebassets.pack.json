@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\mini_projekt_blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\mini_projekt_blazor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\images\\uj_logo.png",
+      "PackagePath": "staticwebassets\\images\\uj_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\js\\movableElements.js",
+      "PackagePath": "staticwebassets\\js\\movableElements.js"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\js\\printForm.js",
+      "PackagePath": "staticwebassets\\js\\printForm.js"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\mikol\\Desktop\\informatyka_2021\\sem5\\c#\\mini_projekt_blazor\\wwwroot\\js\\upload.js",
+      "PackagePath": "staticwebassets\\js\\upload.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.mini_projekt_blazor.props",
+      "PackagePath": "build\\mini_projekt_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.mini_projekt_blazor.props",
+      "PackagePath": "buildMultiTargeting\\mini_projekt_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.mini_projekt_blazor.props",
+      "PackagePath": "buildTransitive\\mini_projekt_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.mini_projekt_blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

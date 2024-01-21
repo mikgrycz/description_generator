@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "mini_projekt_blazor/1.0.0": {
+        "runtime": {
+          "mini_projekt_blazor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "mini_projekt_blazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
